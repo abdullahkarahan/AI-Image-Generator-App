@@ -25,7 +25,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${process.env.VITE_API_BASE_URL}/api/v1/post`,
+          'https://my-ai-generator-app.vercel.app/api/v1/post',
           {
             method: 'POST',
             headers: {
@@ -62,7 +62,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          `${process.env.VITE_API_BASE_URL}/api/v1/dalle`,
+          'https://my-ai-generator-app.vercel.app/api/v1/dalle',
           {
             method: 'POST',
             headers: {

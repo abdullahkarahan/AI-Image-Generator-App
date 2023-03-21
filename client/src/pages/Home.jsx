@@ -27,7 +27,7 @@ const Home = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `${process.env.VITE_API_BASE_URL}/api/v1/post`,
+          'https://my-ai-generator-app.vercel.app/api/v1/post',
           {
             method: 'GET',
             headers: {
